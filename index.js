@@ -15,7 +15,7 @@ function getComputerChoice(){
 
 
 
-function makeDecision(playerSelection, computerSelection){
+function playRound(playerSelection, computerSelection){
     
 if(playerSelection == computerSelection){
     playerCount = false;
@@ -41,7 +41,7 @@ function game(){
         playerSelection = prompt("Enter the value");
         computerSelection = getComputerChoice();
         
-        makeDecision(playerSelection, computerSelection);
+        playRound(playerSelection, computerSelection);
         if (playerCount){
             playerScore += 1;
         }else if(computerCount){
@@ -53,7 +53,7 @@ function game(){
 
         console.log("computer "+computerSelection);
         console.log("player "+playerSelection);
-        console.log(makeDecision(playerSelection,computerSelection));
+        console.log(playRound(playerSelection,computerSelection));
     }
 
 if(playerScore == computerScore){
