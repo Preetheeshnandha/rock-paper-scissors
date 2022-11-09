@@ -1,0 +1,56 @@
+body{
+    font-family: sans-serif;
+    background-color: #153462;
+    color: white;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    padding: 15px;
+    background-color: #153462;
+    color: white;
+    border: 3px solid white;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.selection,
+.score{
+margin: 15px 0;   
+display: flex;
+justify-content: space-evenly;
+font-size: 1rem;
+    font-weight: bold;
+}
+
+.userSelect,
+.compSelect,
+.playerScore,
+.computerScore,
+
+.result,
+
+.finalWin{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.results,
+.finalWinner{
+    display: flex;
+    justify-content: center;
+    
+}
