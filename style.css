@@ -1,22 +1,22 @@
-body{
+body {
     font-family: sans-serif;
     background-color: #153462;
     color: white;
 }
 
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
 }
 
-.btn{
+.btn {
     margin: 35px 0;
     display: flex;
     justify-content: space-around;
 }
 
-button{
+button {
     padding: 15px;
     background-color: #153462;
     color: white;
@@ -27,11 +27,11 @@ button{
 }
 
 .selection,
-.score{
-margin: 15px 0;   
-display: flex;
-justify-content: space-evenly;
-font-size: 1rem;
+.score {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -39,18 +39,16 @@ font-size: 1rem;
 .compSelect,
 .playerScore,
 .computerScore,
-
 .result,
-
-.finalWin{
+.finalWin {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .results,
-.finalWinner{
+.finalWinner {
     display: flex;
     justify-content: center;
-    
+
 }

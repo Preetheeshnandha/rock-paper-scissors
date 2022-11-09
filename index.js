@@ -34,7 +34,7 @@ function playRound(playerSelection, computerSelection) {
     }
 
 
-    
+
 }
 
 
@@ -43,7 +43,7 @@ buttons.forEach(button => {
     button.addEventListener("click", getplayerchoice)
 });
 
-function getplayerchoice(e){
+function getplayerchoice(e) {
     playerSelection = e.target.value;
     game(playerSelection);
 }
@@ -54,15 +54,15 @@ function game(playerSelection) {
     computerSelection = getComputerChoice();
     playRound(playerSelection, computerSelection);
 
-   
+
     if (playerCount) {
-        playerScore +=1;
+        playerScore += 1;
     } else if (computerCount) {
-        computerScore +=1;
+        computerScore += 1;
     }
 
     checkWin();
-    if(gameover){
+    if (gameover) {
         checkGameover();
     }
 
@@ -92,38 +92,37 @@ function game(playerSelection) {
     let result = document.querySelector(".result");
     result.textContent = playRound(playerSelection, computerSelection);
 
-    
+
     //first 5 point player is winner
     let finalWin = document.querySelector(".finalWin");
     finalWin.textContent = checkWin();
 
-    
+
 
 }
 
 
 
-function checkWin(){
+function checkWin() {
 
-    if(playerScore==5 || computerScore ==5){
+    if (playerScore == 5 || computerScore == 5) {
 
         gameover = true;
 
         if (playerScore == computerScore) {
             return "Both are tie in this match";
         } else if (playerScore > computerScore) {
-            return "User  win" ;
+            return "User  win";
         } else if (playerScore < computerScore) {
-            return "Computer  win " ;
+            return "Computer  win ";
         }
     }
-    
+
 }
 
-function checkGameover(){
-        buttons.forEach(button => {
-            button.removeEventListener("click", getplayerchoice)
-        });
-    }
+function checkGameover() {
+    buttons.forEach(button => {
+        button.removeEventListener("click", getplayerchoice)
+    });
+}
 
-    
